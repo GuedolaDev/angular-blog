@@ -4,14 +4,14 @@
 
     <div class="small-card-photo">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sh5_eaDx35sRjeyNLIrsCyp5dHLSFDCMcW2og4Sqmg&s=10"
+        src="{{ photoCover }}"
         alt=""
       />
     </div>
 
     <div class="small-card-title">
       <h1>
-        <a href="#"> Saiu nova versao </a>
+        <a [routerLink]="['content', id]"> {{ cardTitle }} </a>
       </h1>
     </div>
 
