@@ -1,7 +1,20 @@
 .container-articles {
-  margin-top: 30px;
+  margin: 40px auto 0;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(320px, 1.35fr) minmax(280px, 0.9fr);
+  width: min(1200px, calc(100% - 32px));
+}
 
+.articles-main,
+.articles-others {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 860px) {
+  .container-articles {
+    grid-template-columns: 1fr;
+  }
 }

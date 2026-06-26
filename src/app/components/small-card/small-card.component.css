@@ -1,25 +1,42 @@
 .container-small-card {
-  margin-bottom: 15px;
-  width: 700px;
+  background: #0f1724;
+  border: 1px solid rgba(203, 213, 225, 0.12);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.18);
+  width: 100%;
 }
 
 .container-small-card-content {
-  display: flex;
-  flex-direction: row;
-}
-
-.small-card-photo > img {
-  width: 200px;
-  min-width: 200px;
-  margin-right: 20px;
-}
-
-.small-card-title {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 18px;
+  padding: 22px;
   align-items: center;
 }
 
+.small-card-photo img {
+  width: 100%;
+  min-width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.small-card-title h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.small-card-title a {
+  color: var(--text);
+}
+
+.small-card-title a:hover {
+  color: var(--accent);
+}
+
 .container-small-card-separator {
-  margin-top: 10px;
+  border-top: 1px solid rgba(203, 213, 225, 0.12);
+  margin: 0 20px 12px;
 }

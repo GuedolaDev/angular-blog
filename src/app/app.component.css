@@ -1,5 +1,13 @@
 header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  width: 100%;
+  padding: 18px 0;
+  background: rgba(8, 16, 31, 0.92);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 }

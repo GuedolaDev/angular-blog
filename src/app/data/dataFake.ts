@@ -1,4 +1,11 @@
-export const dataFake = [
+export interface Noticies {
+  id: string;
+  photoCover: string;
+  title: string;
+  description: string;
+}
+
+export const dataFake: Noticies[] = [
   {
     "id": "1",
     "photoCover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4SUximV4NM8SJTs7oaMNHFM2p4KdeBHJQwDBFf4Bug&s=10",
